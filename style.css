@@ -518,6 +518,10 @@ body {
   width: 150px;
   height: 40px;
 }
+.logo-three img{
+  width: 150px;
+  height: 40px;
+}
 .back {
   display: flex;
   flex-direction: row;
@@ -860,6 +864,10 @@ footer a {
     justify-content: left !important;
     padding: 2% !important;
   }
+  .logo-three {
+  width: 150px;
+  height: 40px;
+}
   .logo-three img {
     height: 40px !important;
     width: 120px !important;
