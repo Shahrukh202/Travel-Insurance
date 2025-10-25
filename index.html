@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Insurance</title>
+    <link rel="icon" type="image/png" href="./assets/images/Group 11.png">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <img class="bg-image" src="./assets/images/bg1.png" alt="background" />
+      <header class="header" id="mainHeader">
+        <div class="logo">
+          <img src="./assets/images/logo-6.png" alt="" />
+        </div>
+        <nav class="nav">
+          <div class="nav-list" id="travelToggle">
+            <a href="#">Travel Insurance </a>
+            <i
+              class="fa-solid fa-caret-down"
+              style="font-size: 13px; cursor: pointer"
+            ></i>
+          </div>
+          <a href="./emergency.html">Emergency Assistance</a>
+          <div class="nav-list">
+            <a href="#">Customer Service</a>
+            <i
+              class="fa-solid fa-caret-down"
+              style="font-size: 13px; cursor: pointer"
+            ></i>
+          </div>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+      <div class="sidebar" id="sidebar">
+        <div class="logo-mobile">
+          <img src="./assets/images/logo-6.png" alt="" />
+          <div class="close-btn" id="closeSidebar">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <a href="#"
+          >Travel Insurance
+          <i
+            class="fa-solid fa-caret-down"
+            id="mobileDropdownIcon"
+            style="font-size: 13px"
+          ></i
+        ></a>
+        <div class="mobile-submenu" id="mobileSubmenu">
+          <div>Plans</div>
+          <div>Upgrades</div>
+          <div>Traveller Type</div>
+          <div>Trip Type</div>
+          <div>Benefits</div>
+        </div>
+        <a href="./emergency.html">Emergency Assistance</a>
+        <a href="#"
+          >Customer Service
+          <i class="fa-solid fa-caret-down" style="font-size: 13px"></i
+        ></a>
+      </div>
+      <div class="overlay" id="overlay"></div>
+      <section class="travel-section" id="travelSection">
+        <div class="content-box">
+          <img
+            src="./assets/images/insurance.png"
+            alt="Travel"
+            class="image"
+            id="mainLogo"
+          />
+          <div class="content-box1">
+            <div class="title">Travel Insurance</div>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              gravida tincidunt mi, in bibendum sapien pellentesque vitae.
+              Vestibulum quis purus neque. Nam condimentum in lorem id
+              facilisis.
+            </div>
+            <div class="quotes-btn">
+              <div class="btn-text">GET A QUOTE</div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="side-links">
+            <div>Plans</div>
+            <div>Upgrades</div>
+            <div>Traveller Type</div>
+            <div>Trip Type</div>
+            <div>Benefits</div>
+          </div>
+        </div>
+      </section>
+      <section class="hero">
+        <h3>BREAKING THE LIMITS OF TRADITIONAL TRAVEL INSURANCE</h3>
+        <h1>Find the Right Plan for You</h1>
+      </section>
+      <div class="mid-section">
+        <section class="quote-section">
+          <div class="tabs">
+            <button class="tab">Single Trip</button>
+            <button class="tab-active">Multi Trip</button>
+          </div>
+          <div class="quote-box">
+            <form class="quote-form">
+              <label>Where are you travelling?</label>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  id="destinationInput"
+                  placeholder="Type or choose your destinations"
+                  autocomplete="off"
+                />
+                <span id="arrowIcon" class="arrow">&#9662;</span>
+                <div id="dropdown" class="dropdown hidden">
+                  <h4>Popular Destinations</h4>
+                  <hr />
+                  <ul id="countryList"></ul>
+                </div>
+              </div>
+              <div id="selectedDestinations" class="selected"></div>
+              <label>When do you leave?</label>
+              <input type="date" placeholder="DD/MM/YYYY" />
+              <label>When do you return?</label>
+              <input type="date" placeholder="DD/MM/YYYY" />
+              <label>Current age of all Travellers?</label>
+              <div class="age-boxes">
+                <div class="box"></div>
+                <div class="box filled">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <label>Promo Code</label>
+              <input type="text" placeholder="Promo Code" />
+              <button class="quote-btn">GET A QUOTE</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

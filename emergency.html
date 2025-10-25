@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Assistance</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="back" onclick="window.location.href='index.html'">
+        <img src="./assets/images/Vector.png" alt="" />
+        <button class="back-btn">Back</button>
+      </div>
+      <div class="logo-three">
+        <img src="/assets/images/logo white.png" alt="" />
+      </div>
+    </header>
+    <div class="location">
+      <div class="tick">
+        <img src="./assets/images/tick.png" alt="" />
+        <div class="line"></div>
+      </div>
+      <div class="tracking">
+        <img src="./assets/images/plan.png" alt="" />
+        <div class="line1"></div>
+      </div>
+      <div class="Ellipse">
+        <img src="./assets/images/Ellipse.png" alt="" />
+        <div class="line2"></div>
+      </div>
+      <div class="Ellipse1">
+        <img src="./assets/images/Ellipse.png" alt="" />
+        <div class="line3"></div>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <h1 class="step active">Get Quote</h1>
+      <h1 class="step active">Plan Option</h1>
+      <h1 class="step">Travellers</h1>
+      <h1 class="step">Payment</h1>
+    </div>
+    <section class="details">
+      <div><strong>Destination :</strong> Australia</div>
+      <div><strong>Dates :</strong> 04/11/2025 - 13/11/2025</div>
+      <div>
+        <strong>Traveller Ages :</strong> 23
+        <button class="edit-btn">Edit</button>
+      </div>
+    </section>
+    <section class="plans">
+      <div class="plan plan2">
+        <div class="plan-header white"></div>
+        <table class="table1">
+          <tr>
+            <td>Cancellation or trip interruption</td>
+          </tr>
+          <tr>
+            <td>Luggage and personal effects</td>
+          </tr>
+          <tr>
+            <td>Travel Delay</td>
+          </tr>
+          <tr>
+            <td>Personal Liability</td>
+          </tr>
+          <tr class="optional">
+            <td colspan="2">Optional Cover</td>
+          </tr>
+          <tr>
+            <td>Rental Vehicle Excess</td>
+          </tr>
+        </table>
+        <a href="#" class="policy-link">Show All Benefits</a>
+      </div>
+      <div class="plan plan1">
+        <div class="plan-header gray">
+          <div class="plan1-div">
+            <img src="./assets/images/Group 11.png" alt="" />
+          </div>
+          <h2>VOYAGER</h2>
+          <p class="old-price">From<span> $17.37</span></p>
+          <p class="price">$15.98</p>
+          <p class="desc">Total Cost</p>
+          <p class="desc">
+            Policy benefits listed below, per traveller limits apply
+          </p>
+        </div>
+        <table class="">
+          <tr>
+            <td>$1,000</td>
+          </tr>
+          <tr>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>Not available</td>
+          </tr>
+          <tr>
+            <td>Not available</td>
+          </tr>
+          <tr class="optional2">
+            <td colspan="2">Optional Cover</td>
+          </tr>
+          <tr>
+            <td>Not available</td>
+          </tr>
+        </table>
+        <button class="choose-btn" onclick="choosePlan('Voyager')">
+          CHOOSE PLAN
+        </button>
+        <a href="#" class="policy-link2">View Policy Information</a>
+      </div>
+      <div class="plan plan4">
+        <div class="plan-header gold">
+          <h2>VOYAGER PLUS</h2>
+          <p class="price2">$41.34</p>
+        </div>
+      </div>
+      <div class="plan plan3">
+        <div class="plan-header gold">
+          <div>
+            <img src="./assets/images/Group 11.png" alt="" />
+          </div>
+          <h2>VOYAGER PLUS</h2>
+          <p class="old-price">From<span> $44.94</span></p>
+          <p class="price2">$41.34</p>
+          <p class="desc">Total Cost</p>
+          <p class="desc">
+            Policy benefits listed below, per traveller limits apply
+          </p>
+        </div>
+        <table>
+          <tr>
+            <td>$4,000</td>
+          </tr>
+          <tr>
+            <td>$1,000</td>
+          </tr>
+          <tr>
+            <td>$1,000</td>
+          </tr>
+          <tr>
+            <td>$2,500,000</td>
+          </tr>
+          <tr class="optional3">
+            <td colspan="2">Optional Cover</td>
+          </tr>
+          <tr>
+            <td>Not Selected<i class="fa-solid fa-caret-down"></i></td>
+          </tr>
+        </table>
+        <button class="choose-btn gold" onclick="choosePlan('Voyager Plus')">
+          CHOOSE PLAN
+        </button>
+        <a href="#" class="policy-link2">View Policy Information</a>
+      </div>
+    </section>
+    <footer>
+      <p class="footer1">©2025 Logo Ipsum. All Rights Reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms & Conditions</a>
+      </p>
+      <hr class="footer-line" />
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
